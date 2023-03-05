@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div id="content" class="container">
+  <h1>«{{ .Title }}»</h1>
+
+{{ $category := .Title }}
+
+{{ range .Site.Pages }}
+  {{ if .Param "archive" }}
+    {{ if (in .Params.Categories $category )}}
+    {{ partial "project-card.html" . }}
+  {{ end }}
+{{ end }}
+{{ end }}
+</div>
+{{ end }}

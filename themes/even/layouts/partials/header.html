@@ -1,0 +1,22 @@
+<nav class="container-fluid filter">
+    <ul>
+        <li><strong><a href="/">Uri Nyx</a></strong></li>
+        &mdash;
+        <li><a href="{{ .Site.Params.Github }}"><small><i data-feather="github"></i></small></a></li>
+        &mdash;
+        <li><a href="{{ .Site.Params.Email }}"><small><i data-feather="at-sign"></i></small></a></li>
+    </ul>
+    <ul>
+        {{ range .Site.Menus.main }}
+        <li><a class="secondary" href="{{ .URL }}">
+        {{ $text := print .Name | safeHTML }}
+        {{ $text }}
+        </a></li>
+        {{ end }}
+        <li>
+            <label for="switch">
+                <input type="checkbox" id="theme-toggle" name="switch" role="switch">
+            </label>
+        </li>
+    </ul>
+</nav>

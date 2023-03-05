@@ -1,0 +1,5 @@
+{{ if .Param "complete" }}
+    [<em class="complete">{{ .Params.Status }}</em>]
+{{ else }}
+    [<em class="incomplete">{{ .Params.Status }}</em>]
+{{ end }}

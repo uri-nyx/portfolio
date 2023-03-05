@@ -1,0 +1,7 @@
+images: 
+  - image: /images/sliders/index/image1.jpg
+    caption: "1"
+    link: "/about/"
+  - image: /images/sliders/index/image2.jpg
+    caption: "2"
+    link: "/#"

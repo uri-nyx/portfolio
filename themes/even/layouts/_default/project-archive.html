@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div id="content" class="container">
+<div class="grid">
+    <div>
+        <h1>project archive
+            &mdash;
+            [<a href='{{ (.Site.GetPage "categories/").Permalink }}'>categories</a>]
+        </h1>
+    </div>
+</div>
+
+{{ range .Site.Pages }}
+{{ if .Param "archive" }}
+{{ partial "project-card.html" . }}
+{{ end }}
+{{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,32 @@
+{{ define "main" }}
+<style>
+    #background {
+        background-image: url("{{ .Params.Banner }}");
+        background-clip: border-box;
+        background-attachment: scroll; 
+    }
+</style>
+<div id="content" class="container">
+<article class="seethrough">
+    <hgroup class="article-title">
+        <h1>{{ .Title }}</h1>
+        <h3>{{ .Params.Description }}</h3>
+    </hgroup>
+
+    <div class="article-meta">
+        {{ partial "project-metadata.html" . }}
+    </div>
+</article>
+
+<article>
+    {{ if .Param "logs" }}
+    <details>
+        <summary role="button" class="outline"><em>Project Logs</em></summary>
+        {{ partial "logs.html" . }}
+    </details>
+    {{ end }}
+    
+    {{ .Content }}
+</article>
+</div>
+{{ end }}

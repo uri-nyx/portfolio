@@ -1,0 +1,67 @@
+{{ define "main" }}
+
+<style>
+  #under {
+    position: absolute;
+    top: 37%;
+    left: 3.3%;
+    padding: 1rem;
+  }
+</style>
+ 
+<div class="overlay-container" id="portrait">
+  {{ partial "carousel.html" (dict "context" . "carousel" "about" "items" "1" "height" "100" "unit" "vh" "duration" "7000") }}
+  <div id="under" class="hidden-mobile">
+    <a
+      class="outline button-filter mono"
+      role="button"
+      href="{{ .Site.Params.Github }}"
+      ><small
+        ><i data-feather="github"></i>
+        <samp>uri-nyx</samp>
+      </small></a
+    >
+    <a
+      class="outline button-filter mono"
+      role="button"
+      href="{{ .Site.Params.Email }}"
+      ><small><i data-feather="at-sign"></i></small>
+      <samp>rserranof03@usal.es</samp>
+    </a>
+  </div>
+  <div class="container" id="content">
+    <a href="#bio" role="button" class="outline text-overlay hidden-mobile">
+      <hgroup class="visible">
+        <h1>{{ .Title }}</h1>
+        <h3>{{ .Params.Description }}</h3>
+      </hgroup>
+    </a>
+    <br id="bio" />
+    <div>
+      <article>
+        {{ .Content }}
+        <div class="article-meta">{{ partial "contact.html" . }}</div>
+      </article>
+      <div class="grid">
+        <a
+          class="outline button-filter mono"
+          role="button"
+          href="{{ .Site.Params.Github }}"
+          ><small
+            ><i data-feather="github"></i>
+            <samp>uri-nyx</samp>
+          </small></a
+        >
+        <a
+          class="outline button-filter mono"
+          role="button"
+          href="{{ .Site.Params.Email }}"
+          ><small><i data-feather="at-sign"></i></small>
+          <samp>rserranof03@usal.es</samp>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ end }}

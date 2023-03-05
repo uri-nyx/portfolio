@@ -1,0 +1,13 @@
+{{ $project := .Params.Project }}
+<ul class="nobullet">
+{{ range where .Site.Pages ".Params.Log" true }}
+    {{ if (eq (.GetPage ".." ).Params.Project $project) }}
+        {{ $dateTime := .PublishDate.Format "02-01-2006" }}
+        {{ $dateFormat := "2.01.2006" }}
+        <li><time datetime="{{ $dateTime }}">[{{ .PublishDate.Format $dateFormat }}]</time>
+        &mdash; 
+        <a href="{{.Permalink}}"><i>{{.Title}}</i></a>
+        </li>
+    {{ end }}
+{{ end }}
+</ul>

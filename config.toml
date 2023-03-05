@@ -1,0 +1,32 @@
+baseURL = 'https://uri-nyx.art/'
+languageCode = 'en-us'
+title = 'Uri Nyx'
+theme = 'even'
+
+[taxonomies]
+    category = 'categories'
+    project = 'projects'
+
+[Params]
+    github = 'https://github.com/uri-nyx'
+    email = 'mailto:rserranof03@usal.es'
+    dateFormat = '2 of January 2006'
+    background = '/images/background.png'
+
+[menu]
+    [[menu.main]]
+    name = 'projects'
+    pre = 'projects'
+    url = '/projects/'
+    weight = 1
+    [[menu.main]]
+    name = 'about'
+    pre = 'about'
+    url = '/about/#portrait'
+    weight = 2
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = true
+    startLevel = 2

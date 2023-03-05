@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div id="content" class="container">
+  <h1>{{ lower .Title }}</h1>
+
+  {{ range .Pages }}
+  <article class="seethrough">
+    <h4><a href="{{ .RelPermalink }}">«{{ .Title }}»</a></h4>
+    <div class="article-meta">
+      <small><i>{{ .Params.Description }}</i></small>
+    </div>
+  </article>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,13 @@
+{{ with .Params.categories }}
+{{ range . }}
+{{ $href := print (absURL "categories/") (urlize .) }}
+<a class="tag" href="{{ $href }}">«{{ . }}»</a>
+{{ end }}
+{{ end }}
+
+&mdash;
+
+{{ $dateTime := .PublishDate.Format "02-01-2006" }}
+{{ $dateFormat := .Site.Params.dateFormat | default " 2 January 2006" }}
+<time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+

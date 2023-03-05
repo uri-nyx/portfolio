@@ -1,0 +1,29 @@
+{{ define "main" }}
+<style>
+  #under {
+    position: absolute;
+    top: 45%;
+    left: 3.3%;
+    padding: 1rem;
+  }
+</style>
+
+<div class="overlay-container" id="portrait">
+  {{ partial "carousel.html" (dict "context" . "carousel" "som" "items" "1" "height" "90" "unit" "vh" "duration" "7000") }}
+  <div id="under" class="hidden-mobile">
+    <a class="outline button-filter mono" role="button" href="{{ .Site.Params.Github }}"><small><i data-feather="github"></i>
+      <samp>uri-nyx</samp>
+    </small></a>
+    <a class="outline button-filter mono" role="button" href="{{ .Site.Params.Email }}"><small><i data-feather="at-sign"></i></small>
+      <samp>rserranof03@usal.es</samp>
+    </a>
+  </div>
+
+  <div class="container" id="content">
+    <hgroup class="text-overlay visible">
+      <h1>I'm Uri</h1>
+      <h3>and this is my world</h3>
+    </hgroup>
+  </div>
+</div>
+{{ end }}

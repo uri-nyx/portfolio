@@ -1,0 +1,77 @@
+:root {
+    --font-family: Merriweather, Times, serif,
+    "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+    font-variant-ligatures: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+pre,
+code,
+kbd,
+samp {
+    --font-family: FiraCode, monospace,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+p {
+    text-indent: 1rem;
+}
+
+em {
+    font-style: normal;
+    font-variant: small-caps;
+}
+
+article.seethrough {
+    background:  rgba(149, 135, 172, 0.591);
+    backdrop-filter: blur(20px) brightness(70%);
+}
+
+article.seethrough hgroup > :last-child {
+    --color: rgb(198, 198, 227);
+}
+
+hgroup.visible > :last-child {
+    --color: rgb(198, 198, 227);
+}
+
+
+ul.nobullet li{
+    list-style: none;
+}
+
+.overlay-container {
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    padding: 1rem;
+    backdrop-filter: blur(20px) brightness(70%);
+}
+
+.button-filter {
+    backdrop-filter: blur(20px) brightness(70%);
+}
+
+.filter {
+    backdrop-filter: blur(3px) brightness(90%);
+}
+
+@media (max-width: 767px) {
+    .hidden-mobile {
+      display: none;
+    }
+}
+
+#content {
+    max-width: 40rem;
+    text-align: justify;
+    text-justify: newspaper;
+}

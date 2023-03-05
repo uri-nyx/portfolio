@@ -1,0 +1,41 @@
+{{ define "categories"}}
+    {{ with .GetPage ".." }}
+    {{ with .Params.categories }}
+    {{ range . }}
+    {{ $href := print (absURL "categories/") (urlize .) }}
+    <a class="tag" href="{{ $href }}">«{{ . }}»</a>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+{{ end }}
+
+{{ define "project"}}
+    {{ with .GetPage ".." }}
+    {{ $project_root := .GetPage ".." }}
+    <a href="{{ $project_root.Permalink }}">{{ .Params.Project }}</a>
+    {{ end }}
+{{ end }}
+
+{{ define "main" }}
+<style>
+    #background {
+        background-image: none;
+    }
+</style>
+<div id="content" class="container">
+<h1 class="article-title">{{ .Title }}</h1>
+<div class="article-meta">
+    <div>
+        <em>[{{ template "project" . }}]</em>
+    </div>
+    {{ template "categories" . }}
+    {{ partial "metadata.html" . }}
+</div>
+
+    <div><em>{{ .Params.Place }}</em></div>
+    {{ .Content }}
+    <p>
+    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+</p>
+</div>
+{{ end }}

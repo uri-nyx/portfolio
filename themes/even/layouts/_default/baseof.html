@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<style>
+    #background {
+        background-image: url("https://www.transparenttextures.com/patterns/xv.png"),
+                          url("{{ .Site.Params.Background }}");
+        background-repeat: repeat;
+    }
+</style>
+
+<html id="background">
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        {{- block "main" . }}{{- end }}
+        {{- partial "footer.html" . -}}
+        {{- partial "script.html" . -}}
+    </body>
+</html>
