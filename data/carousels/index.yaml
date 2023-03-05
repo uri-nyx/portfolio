@@ -1,7 +1,7 @@
 images: 
-  - image: /images/sliders/index/image1.jpg
-    caption: "1"
-    link: "/about/"
-  - image: /images/sliders/index/image2.jpg
-    caption: "2"
-    link: "/#"
+  - image: '/images/sliders/index/other-worlds.jpg'
+    caption: "Other Worlds"
+    link: "/projects/ink"
+  - image: '/images/sliders/index/ink.jpg'
+    caption: "Ink"
+    link: "/projects/ink"
