@@ -1,5 +1,5 @@
 +++
 title = 'photography'
-description = 'TODO: add description'
+description = 'Photograpic series and stories'
 banner = 'banner.jpg'
 +++

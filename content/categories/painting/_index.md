@@ -1,5 +1,5 @@
 +++
 title = 'painting'
-description = 'TODO: add description'
+description = 'Painting, in all the senses the word can encompass'
 banner = 'banner.jpg'
 +++
