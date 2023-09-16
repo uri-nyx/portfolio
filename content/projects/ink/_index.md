@@ -17,4 +17,4 @@ categories = ['painting']
 Some very quick portraits in homemade [iron gall ink](https://en.wikipedia.org/wiki/Iron_gall_ink), on gray paper, an ancient receipe dating back to medieval monks and possibly the Roman Empire.
 
 {{< load-photoswipe >}}
-{{< gallery dir="/images/ink/" >}}
+{{< gallery dir="/images/ink/" />}}

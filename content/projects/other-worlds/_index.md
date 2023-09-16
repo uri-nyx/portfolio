@@ -17,4 +17,4 @@ categories = ['painting']
 Landscapes inspired by fantasy and loneliness. Homemade watercolor, oil and tempera.
 
 {{< load-photoswipe >}}
-{{< gallery dir="/images/other-worlds/" >}}
+{{< gallery dir="/images/other-worlds/" />}}

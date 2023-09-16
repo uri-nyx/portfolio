@@ -1,7 +1,25 @@
 images: 
   - image: '/images/sliders/index/other-worlds.jpg'
     caption: "Other Worlds"
-    link: "/projects/ink"
+    link: "/projects/other-worlds"
   - image: '/images/sliders/index/ink.jpg'
     caption: "Ink"
     link: "/projects/ink"
+  - image: '/images/sliders/index/nature.jpg'
+    caption: "Nature After the Fall"
+    link: '/projects/nature-after-the-fall'
+  - image: '/images/sliders/index/river.jpg'
+    caption: "The River"
+    link: 'projects/the-river'
+  - image: '/images/sliders/index/tfg.jpg'
+    caption: "Alchemy and Painting: crossroads in an integration language"
+    link: 'projects/tfg'
+  - image: '/images/sliders/index/iron.jpg'
+    caption: "Iron Landscapes"
+    link: 'projects/iron'
+  - image: '/images/sliders/index/alchemy.jpg'
+    caption: "Alchemy Experiments"
+    link: 'projects/alchemy'
+  - image: '/images/sliders/index/portraits.jpg'
+    caption: "Iron Portraits"
+    link: 'projects/portraits'
