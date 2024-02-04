@@ -5,3 +5,15 @@ images:
   - image: /images/sliders/about/portrait2.jpg
     caption: ""
     link: "#portrait"
+  - image: /images/sliders/about/unesco1.jpg
+    caption: ""
+    link: "#portrait"
+  - image: /images/sliders/about/pequeno.jpg
+    caption: ""
+    link: "#portrait"
+  - image: /images/sliders/about/bwportrait.jpg
+    caption: ""
+    link: "#portrait"
+  - image: /images/sliders/about/graduate.jpg
+    caption: ""
+    link: "#portrait"

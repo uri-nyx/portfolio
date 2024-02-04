@@ -1,6 +1,6 @@
 # A personal portfolio page
 
-A simple personal porfolio for myself, with a custom hugo theme. It combines an artist visual image driven portfolio, and a developer one, centered around text and devlogs. It organized content by project and slideshows rather than posts.
+A simple personal porfolio for myself, with a custom hugo theme. It combines an artist visual image driven portfolio, and a developer one, centered around text and devlogs. It organizes content by projects and slideshows rather than posts.
 
 ## Resources used
 

@@ -8,9 +8,10 @@ theme = 'even'
     project = 'projects'
 
 [Params]
+    mupes  = '/categories/education'
     github = 'https://github.com/uri-nyx'
     email = 'mailto:rserranof03@usal.es'
-    dateFormat = '2 of January 2006'
+    dateFormat = '2 January 2006'
     background = '/images/background.png'
 
 [menu]
@@ -24,6 +25,11 @@ theme = 'even'
     pre = 'about'
     url = '/about/#portrait'
     weight = 2
+    [[menu.main]]
+    name = 'education'
+    pre = 'education'
+    url = '/projects/innovacion'
+    weight = 3
 
 [markup]
   [markup.tableOfContents]

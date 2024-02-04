@@ -26,6 +26,13 @@ em {
     font-variant: small-caps;
 }
 
+del {
+    color: inherit;
+    font-style: italic;
+    text-decoration-line: none;
+}
+
+
 article.seethrough {
     background:  rgba(149, 135, 172, 0.591);
     backdrop-filter: blur(20px) brightness(70%);

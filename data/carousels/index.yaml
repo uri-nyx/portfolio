@@ -23,3 +23,6 @@ images:
   - image: '/images/sliders/index/portraits.jpg'
     caption: "Iron Portraits"
     link: 'projects/portraits'
+  - image: '/images/sliders/index/introspeccion.jpg'
+    caption: "Innovación Docente: Portafolio"
+    link: 'projects/innovacion'

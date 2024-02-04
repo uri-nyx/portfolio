@@ -8,6 +8,5 @@
 &mdash;
 
 {{ $dateTime := .PublishDate.Format "02-01-2006" }}
-{{ $dateFormat := .Site.Params.dateFormat | default " 2 January 2006" }}
-<time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+<time datetime="{{ $dateTime }}">the {{ humanize .PublishDate.Day }} of {{ .PublishDate.Month }}, {{ .PublishDate.Year }}</time>
 

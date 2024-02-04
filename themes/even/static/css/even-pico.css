@@ -889,7 +889,10 @@ ins {
 }
 
 del {
-  color: var(--del-color);
+  /*color: var(--del-color);*/
+  color: inherit;
+  font-style: italic;
+  text-decoration-line: none;
 }
 
 ::selection {

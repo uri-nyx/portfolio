@@ -1,5 +1,3 @@
 +++
 title = 'Categories'
 +++
-
-hello

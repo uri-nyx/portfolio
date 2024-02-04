@@ -14,7 +14,7 @@ project = 'iron'
 categories = ['painting']
 +++
 
-Related to [Portraits](/projects/portraits/). These are imagined landscapes, painted on iron gall ink over gray paper, mostly to test the fluidity and pasticity of different recipes of iron gall inks.
+Related to [Portraits](/projects/portraits/). These are imagined landscapes, painted on iron gall ink over gray paper, mostly to test the fluidity and plasticity of different recipes of iron gall inks.
 
 {{< load-photoswipe >}}
 {{< gallery dir="/images/iron/" />}}
